@@ -1,0 +1,81 @@
+.dataList{
+    margin: 20px;
+    border-radius: 10px;
+    display:flex;
+    overflow-y: scroll;
+    background-color: lightblue;
+    min-width: 90vw;
+    min-height: 150px;
+    
+}
+
+.ansList{
+    margin: 20px;
+    display:flex;
+    overflow-y: scroll;
+    min-width: 90vw;
+    min-height: 150px;
+    border-radius: 10px;
+    background-color:lightblue;
+}
+
+.operatorList{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+}
+
+.operator{
+    min-width:100px;
+    min-height:100px;
+    border-radius:50%;
+    background-color:lightblue;
+}
+
+.textInOperator{
+    margin-top:33px;
+}
+
+.itemClass{
+    margin: 20px;
+    background-color: lightcyan;
+    min-width: 100px;
+    border-radius:10px;
+    padding: 5px;
+}
+
+.heading{
+    background-color:lightgray;
+    margin:10px;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.calButton{
+    padding:10px;
+    margin:10px;
+}
+
+.buttonClass{
+    background-color:blueviolet;
+    padding:10px;
+    color:white;
+    border-radius: 10px;
+    border:none;
+}
+
+ul{
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+}
+
+li{
+    margin:10px;
+    padding:10px;
+    background-color:lightcoral;
+    color: white;
+    border-radius: 10px;
+}
+
+/* .dataList::-webkit-scrollbar { width: 0.3 !important } */
