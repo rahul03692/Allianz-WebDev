@@ -4,7 +4,7 @@ import { AnsContext } from "../contexts/ansContext";
 import "./styles.css";
 
 const AnsItem = ({ item }) => {
-  const { addData } = useContext(DataContext);
+  const { addData} = useContext(DataContext);
   const {removeAnsData } = useContext(AnsContext);
 
 
@@ -17,6 +17,7 @@ const AnsItem = ({ item }) => {
       addData(item); 
     }
   };
+
 
   return (
     <div

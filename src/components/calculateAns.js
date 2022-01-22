@@ -26,7 +26,7 @@ const CalculateAns = () => {
 
     //console.log(ans);
 
-    alert("answer is " + eval(ans));
+    alert("Output = " + eval(ans));
     window.location.reload();
 
   }
