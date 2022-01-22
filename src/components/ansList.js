@@ -2,7 +2,7 @@ import AnsItem from "./ansItem";
 import {useContext} from 'react';
 import {AnsContext} from '../contexts/ansContext';
 import {DataContext} from '../contexts/dataContext';
-
+import {v4 as uuid} from 'uuid';
 const AnsList = () => {
 
   const {data,removeData } = useContext(DataContext);
@@ -17,8 +17,12 @@ const AnsList = () => {
       var id = event.dataTransfer.getData("id");
 
       var item = data.filter((ele) => ele._id === id);
-      addAnsData(item[0]);
-      removeData(id);
+      if(item.length === 0){
+        var add = event.dataTransfer.getData("itemToAdd");
+        var addObject = {name : add , isOperator : true , _id : uuid()};
+        item=[addObject];
+      }
+      if(addAnsData(item[0])) removeData(id);
     }
   };
 

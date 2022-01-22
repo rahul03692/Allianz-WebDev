@@ -41,8 +41,6 @@ const AnsContextProvider = (props) => {
 
     }
 
-    console.log(idx,);
-
     if(idx === n-1) setAnsData(ansData.filter((item) => item._id !== id));
     else alert("ERROR : Can't Remove");
   };

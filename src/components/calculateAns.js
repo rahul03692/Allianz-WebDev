@@ -26,7 +26,13 @@ const CalculateAns = () => {
 
     //console.log(ans);
 
-    alert("Output = " + eval(ans));
+    try{
+      alert("Output = " + eval(ans));
+    }
+    catch(e){
+      alert(e.message);
+    }
+
     window.location.reload();
 
   }
